@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Fornecedores</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Gestão de Fornecedores</h1>
+            <p id="subtitulo">Sistema para adicionar,alterar,consultar e remover fornecedores</p>
+            <br>
+        </div>
+        <ul>
+            <li ><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="consulta.html">Consulta e alteração</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+            <li class="pagina">Auditoria</li>
+        </ul>
+        <fieldset class="grupo">
+            <div class="campo">
+                <input type="date" name="data" id="data">
+                à
+            </div>            
+            <div class="campo">
+                <input type="date" name="data" id="data">
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+        <div class="campo">
+            <h3>Usuário</h3>
+            <select id="usuario">
+                <option value="usuario">Selecione</option>
+                <option value="usuario1">Usuário 1</option>
+                <option value="usuario2">Usuário 2</option>
+                <option value="usuario3">Usuário 3</option>
+                <option value="usuario4">Usuário 4</option>
+                <option value="usuario5">Usuário 5</option>
+                <option value="usuario6">Usuário 6</option>
+            </select>
+        </div>
+        <div class="campo">
+            <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
+        </div> 
+        </fieldset>
+        <button class="botaoFiltrar" type="button" onsubmit="">Filtrar</button>
+        <div class="campo">
+            <table border="2">
+                <tr>
+                    <td>Data</td>
+                    <td>Hora</td>
+                    <td>Usuário</td>
+                    <td>Alteração</td>
+                </tr>
+                <tr>
+                    <td>15/07/2021</td>
+                    <td>12:38</td>
+                    <td>Rodolfo</td>
+                    <td>Adição do fornecedor 1</td>
+                </tr>
+                <tr>
+                    <td>14/07/2021</td>
+                    <td>13:14</td>
+                    <td>Augusto</td>
+                    <td>Alteração no fornecedor 2</td>
+                </tr>
+                <tr>
+                    <td>15/07/2021</td>
+                    <td>12:38</td>
+                    <td>Garcia</td>
+                    <td>Adição do fornecedor 3</td>
+                </tr>
+                <tr>
+                    <td>14/07/2021</td>
+                    <td>13:14</td>
+                    <td>Renato</td>
+                    <td>Alteração no fornecedor 4</td>
+                </tr>
+                <tr>
+                    <td>15/07/2021</td>
+                    <td>12:38</td>
+                    <td>Jorge</td>
+                    <td>Adição do contato 5</td>
+                </tr>
+                <tr>
+                    <td>14/07/2021</td>
+                    <td>13:14</td>
+                    <td>Antonio</td>
+                    <td>Alteração no fornecedor 4</td>
+                </tr>
+                <tr>
+                    <td>15/07/2021</td>
+                    <td>12:38</td>
+                    <td>Rodolfo</td>
+                    <td>Remoção do contato 3</td>
+                </tr>
+                <tr>
+                    <td>14/07/2021</td>
+                    <td>13:14</td>
+                    <td>Augusto</td>
+                    <td>Alteração no fornecedor 2</td>
+                </tr>
+            </table>
+            <button class="botao" type="button" onsubmit=""><a href="usuario.html"">Adicionar Usuário</a></button>
+        </div>
+        </body>
+
+</html>
+
+
+
+

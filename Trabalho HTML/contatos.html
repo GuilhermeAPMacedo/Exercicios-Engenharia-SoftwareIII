@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Fornecedores</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Gestão de Fornecedores</h1>
+            <p id="subtitulo">Sistema para adicionar,alterar,consultar e remover fornecedores</p>
+            <br>
+        </div>
+        <ul>
+            <li ><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="consulta.html">Consulta e alteração</a></li>
+            <li class="pagina">Contatos</li>
+            <li><a href="auditoria.html">Auditoria</a></li>
+        </ul>
+        <!-- Início do formulário -->
+        <form>           
+            <div class="campo">
+                <h3>Selecione um contato para editar ou adicione um novo</h3>
+                <select id="contato">
+                    <option value="novoContato">Novo</option>
+                    <option value="contato1">Contato 1</option>
+                    <option value="contato2">Contato 2</option>
+                    <option value="contato3">Contato 3</option>
+                    <option value="contato4">Contato 4</option>
+                    <option value="contato5">Contato 5</option>
+                    <option value="contato6">Contato 6</option>
+                </select>
+            </div>
+            <h2 id="titulo2"><strong>Dados de Contato</strong></h2>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Departamento</strong></label>                
+                    <input type="text" name="departamento" >  
+                </div>                  
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+            </fieldset> 
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="+xx (xx) xxxxx-xxxx" >
+                </div>
+                <div class="campo">
+                    <label for="ramal"><strong>Ramal</strong></label>
+                    <input type="tel" name="ramal" id="ramal">
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="tipoTelefone"><strong>Tipo Telefone</strong></label>
+                    <input type="tel" name="tipoTelefone" id="tipoTelefone" required >
+                </div>
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required >
+                </div>
+            </fieldset>
+            <button class="botaoCadastrar" type="submit" onsubmit="">Cadastrar</button> 
+            <button class="botaoExcluir" type="reset" onsubmit="">Excluir</button> 
+        </form>
+    </body>
+
+</html>
+
+
+
+

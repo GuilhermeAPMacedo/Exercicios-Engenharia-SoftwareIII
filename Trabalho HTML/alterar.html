@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Fornecedores</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Gestão de Fornecedores</h1>
+            <p id="subtitulo">Sistema para adicionar,alterar,consultar e remover fornecedores</p>
+            <br>
+        </div>
+        
+        <ul>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li class="pagina">Consulta e alteração</li>
+            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="auditoria.html">Auditoria</a></li>
+        </ul>
+        <!-- Início do formulário -->
+        <form>    
+            <h4>Selecione o fornecedor que deseja verificar</h4>   
+        <fieldset class="grupo">
+            <div class="campo">
+                <select id="fornecedor">
+                    <option value="fornecedor1">Selecione...</option>
+                    <option value="fornecedor1">Fornecedor 1</option>
+                    <option value="fornecedor2">Fornecedor 2</option>
+                    <option value="fornecedor3">Fornecedor 3</option>
+                    <option value="fornecedor4">Fornecedor 4</option>
+                    <option value="fornecedor5">Fornecedor 5</option>
+                    <option value="fornecedor6">Fornecedor 6</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label></label>
+            </div>
+        </fieldset>             
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="cnpj"><strong>CNPJ</strong></label>
+                <input type="text" name="cnpj" id="cnpj" required>
+            </div>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="inscricaoE"><strong>Inscrição Estadual</strong></label>
+                    <input type="text" name="inscricaoE" id="inscricaoE" required>
+                </div>
+                <div class="campo">
+                    <label for="inscricaoM"><strong>Inscrição Municipal</strong></label>
+                    <input type="text" name="inscricaoM" id="inscricaoM" required>
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Razão Social</strong></label>
+                    <input type="text" name="rzSocial" id="rzSocial" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Nome Fantasia</strong></label>
+                    <input type="text" name="nmFantasia" id="nmFantasia" required>
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Empresa</strong></label>
+                    <input type="text" name="empresa" id="empresa" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Tipo</strong></label>
+                    <select id="tipoEmpresa">
+                        <option value="matriz">Matriz</option>
+                        <option value="filial">Filial</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label><strong>Fornecimento</strong></label>
+                    <select id="tipoFornecimento">
+                        <option value="vendas">Vendas</option>
+                        <option value="servicos" >Serviços</option>
+                    </select>
+                </div>
+            </fieldset>
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+            <label><strong>Serviços</strong></label>                
+                <textarea id="textarea" name="textarea" rows="5" cols="33"> 
+                </textarea>
+            </div>
+            <h2 id="titulo2"><strong>Dados de Contato</strong></h2>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Departamento</strong></label>                
+                    <input type="text" name="departamento" >  
+                </div>                  
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+            </fieldset> 
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="+xx (xx) xxxxx-xxxx" >
+                </div>
+                <div class="campo">
+                    <label for="ramal"><strong>Ramal</strong></label>
+                    <input type="tel" name="ramal" id="ramal">
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="tipoTelefone"><strong>Tipo Telefone</strong></label>
+                    <input type="tel" name="tipoTelefone" id="tipoTelefone" required >
+                </div>
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+            </fieldset>
+            <button class="botao" type="button" onsubmit="Teste">Associar contato</button> 
+            <h2 id="titulo2"><strong>Produtos</strong></h2>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Descrição</strong></label>
+                    <input type="text" name="descricao" id="descricao" >
+                </div>                
+                <div class="campo">
+                    <label><strong>ID</strong></label>
+                    <input type="text" name="descricao" id="descricao" >
+                </div>
+            </fieldset> 
+            <div class="campo">
+                <label><strong>Nomes</strong></label>                
+                <textarea id="textarea" name="textarea" rows="5" cols="33"></textarea>
+            </div>  
+            <h2 id="titulo2"><strong>Endereço</strong></h2>
+            <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="cep"><strong>CEP</strong></label>
+                    <input type="text" name="cep" id="cep" required placeholder="XXXXX-XXX">
+                </div>
+                <div class="campo">
+                    <label for="UF"><strong>UF</strong></label>
+                    <input type="text" name="uf" id="uf" required>
+                </div>
+                <div class="campo">
+                    <label for="cidade"><strong>Cidade</strong></label>
+                    <input type="text" name="cidade" id="cidade" required >
+                </div>
+                <div class="campo">
+                    <label for="pais"><strong>Pais</strong></label>
+                    <input type="text" name="pais" id="pais" required >
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="logradouro"><strong>Logradouro</strong></label>
+                    <input type="text" name="logradouro" id="logradouro" required >
+                </div>
+                <div class="campo">
+                    <label for="tipoLogradouro"><strong>Tipo Logradouro</strong></label>
+                    <input type="text" name="tipoLogradouro" id="tipoLogradouro" required>
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="tipoEndereco"><strong>Tipo Endereço</strong></label>
+                    <input type="text" name="tipoEndereco" id="tipoEndereco" required >
+                </div>
+                <div class="campo">
+                    <label for="bairro"><strong>Bairro</strong></label>
+                    <input type="text" name="bairro" id="bairro" required >
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="numero"><strong>Número</strong></label>
+                    <input type="text" name="numero" id="numero" >
+                </div>
+                <div class="campo">
+                    <label for="complemento"><strong>Complemento</strong></label>
+                    <input type="text" name="complemento" id="complemento" >
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Data de cadastro</strong></label>
+                    <input type="date" name="dtCadastro" id="dtCadastro" required>
+                </div>
+                <div class="campo">
+                    <label><strong>ID</strong></label>
+                    <input type="number" name="identificacao" id="identificacao" required>
+                </div>
+                <div class="campo">
+                    <label><strong>CNAE</strong></label>                
+                    <input type="text" name="cnae" id="cnae" required>  
+                </div>
+            </fieldset>
+            <!-- Botão para enviar o formulário -->                       
+            <button class="botaoCadastrar" type="submit" onsubmit="">Salvar</button> 
+            <button class="botaoExcluir" type="reset" onsubmit="">Excluir</button> 
+            <button class="botaoAtivar" type="button" onsubmit="">Ativar</button> 
+            <button class="botaoInativar" type="button" onsubmit="">Inativar</button>
+        </form>
+    </body>
+
+</html>
+
+
+
+

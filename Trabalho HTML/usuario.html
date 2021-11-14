@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Fornecedores</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Gestão de Fornecedores</h1>
+            <p id="subtitulo">Sistema para adicionar,alterar,consultar e remover fornecedores</p>
+            <br>
+        </div>
+        <ul>
+            <li class="pagina">Cadastro</li>
+            <li><a href="consulta.html">Consulta e alteração</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="auditoria.html">Auditoria</a></li>
+        </ul>
+        <!-- Início do formulário -->
+        <form>
+            <div class="campo">
+                <h3>Selecione um usuário para editar ou adicione um novo</h3>
+                <select id="usuario">
+                    <option value="novoUsuario">Novo</option>
+                    <option value="usuario1">Usuário 1</option>
+                    <option value="usuario2">Usuário 2</option>
+                    <option value="usuario3">Usuário 3</option>
+                    <option value="usuario4">Usuário 4</option>
+                    <option value="usuario5">Usuário 5</option>
+                </select>
+            </div>
+            <h2 id="titulo2"><strong>Dados</strong></h2>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Login</strong></label>                
+                    <input type="text" name="login" required>  
+                </div>                  
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Senha</strong></label>
+                    <input type="password" name="nome" id="nome" required>
+                </div>
+            </fieldset> 
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Nome</strong></label>                
+                    <input type="text" name="nome" required>  
+                </div> 
+            </fieldset>
+            <button class="botaoCadastrar" type="submit" onsubmit="">Cadastrar</button>
+            <button class="botaoExcluir" type="submit" onsubmit="">Excluir</button>
+        </form>
+    </body>
+
+</html>
+
+
+
+
